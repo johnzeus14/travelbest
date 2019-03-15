@@ -1,29 +1,40 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <navbar-desktop class = "uk-visible@l"> </navbar-desktop>
+   <navbar-mobile class= "uk-hidden@l"> </navbar-mobile>
     <router-view/>
+
+  <footer-mobile class  = "uk-hidden@l">  </footer-mobile>
+
   </div>
 </template>
 
+
+<script >
+//navbar 
+import navbar_d  from '@/components/desktop/navbar.vue'
+import navbar_m from '@/components/mobile/navbar.vue'
+
+
+//footer
+import footer_m from '@/components/mobile/footer.vue'
+//import footer_d from '@/components/desktop/footer.vue'
+
+
+
+
+export default {
+
+components:{
+  'navbar-desktop':navbar_d,
+  'navbar-mobile':navbar_m,
+  'footer-mobile':footer_m
+},
+
+}
+
+
+</script>
 <style lang="less">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+
 </style>

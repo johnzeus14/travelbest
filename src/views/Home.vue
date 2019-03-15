@@ -1,18 +1,35 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  	<hero-d>  </hero-d>
+
+  	<packages-d>  </packages-d>
+
+  
+
+  	<visa-d>  </visa-d>
+
+    <footer-d></footer-d>
+   
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import hero_d from '@/components/desktop/hero.vue'
+
+import packages_d from '@/components/desktop/packages.vue'
+import visa_d from '@/components/desktop/visa.vue'
+import footer_d from '@/components/desktop/footer.vue'
+
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    'hero-d': hero_d,
+    'packages-d':packages_d,
+    'visa-d':visa_d,
+    'footer-d':footer_d
+
   }
 }
 </script>

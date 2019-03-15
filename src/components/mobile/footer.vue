@@ -1,0 +1,41 @@
+<template>
+ 
+  <div>
+  
+
+<nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left"> </div>
+    <div class="uk-navbar-center"></div>
+    <div class="uk-navbar-right"></div>
+</nav>
+   
+  
+  
+  </div>
+</template>
+
+
+  
+<script>
+
+
+
+export default {
+  data(){
+    return{
+      
+    }
+  },
+methods :{
+
+},
+ 
+
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="less">
+
+// @import '../theme/theme.less';
+</style>
